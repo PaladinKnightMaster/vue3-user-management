@@ -1,0 +1,43 @@
+// Define breakpoints
+$large: 1400px;
+$medium: 1024px;
+$small: 375px;
+
+@mixin sm {
+    @media (min-width: #{$small}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin max-sm {
+    @media (max-width: #{$small}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$medium}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin max-md {
+    @media (max-width: #{$medium}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$large}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin max-lg {
+    @media (max-width: #{$large}) {
+        @content;
+    }
+}
